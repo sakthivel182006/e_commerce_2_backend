@@ -64,6 +64,9 @@ app.use("/api/shop/search", shopSearchRouter);
 app.use("/api/shop/review", shopReviewRouter);
 
 app.use("/api/common/feature", commonFeatureRouter);
+app.get("/", (req, res) => {
+  res.send("Hello World 🚀 Server is running");
+});
 
 // ✅ Start server
 app.listen(PORT, () => {
